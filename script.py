@@ -17,7 +17,7 @@ if not os.path.exists(output_dir):
 # Process all image files in the input directory
 for file_name in os.listdir(input_dir):
     # Check if the file is an image
-    if file_name.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp', '.gif')):
+    if file_name.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp')):
         # Load the image
         img_path = os.path.join(input_dir, file_name)
         img = cv.imread(img_path)
